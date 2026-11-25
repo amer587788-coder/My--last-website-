@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Login </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 380px;
+        }
+
+        h1 {
+            color: #1877f2;
+            font-size: 45px;
+        }
+
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ccc;
+        }
+
+        .demo {
+            color: #b45309;
+            font-weight: bold;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SocialBook</h1>
+
+    <div class="login-box">
+
+        <p class="real">Realistic ONLY — FACEBOOK</p>
+
+        <h3>Login Page</h3>
+
+        <form id="realForm">
+
+            <input
+                type="text"
+                placeholder="username"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="password"
+                required
+            >
+
+            <button type="submit">Test Login</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+</div>
+
+<script>
+document.getElementById("realForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+    " real successful!  credentials were collected.";
+
+});
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Login </title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 380px;
+        }
+
+        h1 {
+            color: #1877f2;
+            font-size: 45px;
+        }
+
+        .login-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ccc;
+        }
+
+        .real {
+            color: #b45309;
+            font-weight: bold;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SocialBook</h1>
+
+    <div class="login-box">
+
+        <p class="real">realistic ONLY —  FACEBOOK</p>
+
+        <h3> Login Page</h3>
+
+        <form id="realForm">
+
+            <input
+                type="text"
+                placeholder="real username"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="real password"
+                required
+            >
+
+            <button type="submit">Test Login</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+</div>
+
+<script>
+document.getElementById("realistic Form")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("message").textContent =
+    "real successful! credentials were collected.";
+
+});
+</script>
+
+</body>
+</html>
